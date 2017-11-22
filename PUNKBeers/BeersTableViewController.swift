@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class BeersTableViewController: UITableViewController {
 
@@ -47,9 +48,11 @@ class BeersTableViewController: UITableViewController {
    
         let beer = beers[indexPath.row]
      
-        //cell.lbName.text = beer.name
-        //cell.lbAlcoholContent.text =  String(beer.alcoholContent)
-  
+        cell.lbName.text = beer.name
+        cell.lbContent.text =  "Teor alcoólico: \(beer.alcoholContent)"
+        let resource = ImageResource(downloadURL: URL(string: beer.image)!, cacheKey: beer.image)
+        cell.ivBeer.kf.setImage(with: resource)
+        
         return cell
     }
     

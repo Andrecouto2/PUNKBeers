@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58F0EAAB5FD929393FE853FC /* Pods_PUNKBeers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B378D80B531BF339AAE8329D /* Pods_PUNKBeers.framework */; };
 		90664AA51FC3B4BB00E525FC /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90664AA41FC3B4BB00E525FC /* BeerTableViewCell.swift */; };
 		90A4D0CC1FC2FAF700C18DD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A4D0CB1FC2FAF700C18DD7 /* AppDelegate.swift */; };
 		90A4D0CE1FC2FAF700C18DD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A4D0CD1FC2FAF700C18DD7 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79580E761724C4835D60AFBB /* Pods-PUNKBeers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PUNKBeers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PUNKBeers/Pods-PUNKBeers.debug.xcconfig"; sourceTree = "<group>"; };
 		90664AA41FC3B4BB00E525FC /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
 		90A4D0C81FC2FAF700C18DD7 /* PUNKBeers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PUNKBeers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A4D0CB1FC2FAF700C18DD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		90A4D0DD1FC2FF3A00C18DD7 /* BeersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersTableViewController.swift; sourceTree = "<group>"; };
 		90A4D0DF1FC30E2800C18DD7 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		90A4D0E11FC3117200C18DD7 /* REST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REST.swift; sourceTree = "<group>"; };
+		B378D80B531BF339AAE8329D /* Pods_PUNKBeers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PUNKBeers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF0CDD309144EEFEDB6D7EB7 /* Pods-PUNKBeers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PUNKBeers.release.xcconfig"; path = "Pods/Target Support Files/Pods-PUNKBeers/Pods-PUNKBeers.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58F0EAAB5FD929393FE853FC /* Pods_PUNKBeers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FCE0C1CB43154BF9D0CDCE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B378D80B531BF339AAE8329D /* Pods_PUNKBeers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		148FDCF30B00C4C7AC5DA62F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79580E761724C4835D60AFBB /* Pods-PUNKBeers.debug.xcconfig */,
+				FF0CDD309144EEFEDB6D7EB7 /* Pods-PUNKBeers.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		90A4D0BF1FC2FAF700C18DD7 = {
 			isa = PBXGroup;
 			children = (
 				90A4D0CA1FC2FAF700C18DD7 /* PUNKBeers */,
 				90A4D0C91FC2FAF700C18DD7 /* Products */,
+				148FDCF30B00C4C7AC5DA62F /* Pods */,
+				0FCE0C1CB43154BF9D0CDCE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90A4D0DA1FC2FAF700C18DD7 /* Build configuration list for PBXNativeTarget "PUNKBeers" */;
 			buildPhases = (
+				33705755A9E0EC71711535E2 /* [CP] Check Pods Manifest.lock */,
 				90A4D0C41FC2FAF700C18DD7 /* Sources */,
 				90A4D0C51FC2FAF700C18DD7 /* Frameworks */,
 				90A4D0C61FC2FAF700C18DD7 /* Resources */,
+				BE5084A5511996090FD9E988 /* [CP] Embed Pods Frameworks */,
+				046AAD134D73F273EA73F09F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,6 +169,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		046AAD134D73F273EA73F09F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PUNKBeers/Pods-PUNKBeers-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33705755A9E0EC71711535E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PUNKBeers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE5084A5511996090FD9E988 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PUNKBeers/Pods-PUNKBeers-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PUNKBeers/Pods-PUNKBeers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		90A4D0C41FC2FAF700C18DD7 /* Sources */ = {
@@ -288,6 +369,7 @@
 		};
 		90A4D0DB1FC2FAF700C18DD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79580E761724C4835D60AFBB /* Pods-PUNKBeers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +385,7 @@
 		};
 		90A4D0DC1FC2FAF700C18DD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF0CDD309144EEFEDB6D7EB7 /* Pods-PUNKBeers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
